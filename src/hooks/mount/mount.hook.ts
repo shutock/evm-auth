@@ -1,0 +1,8 @@
+import React from "react";
+
+export const useMount = () => {
+  const [isMounted, setIsMounted] = React.useState(false);
+  React.useEffect(() => setIsMounted(true), []);
+
+  return { isMounted };
+};

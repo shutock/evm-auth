@@ -1,0 +1,17 @@
+@use "./fonts.scss";
+@use "./colors.scss";
+
+@import "./reset.scss";
+
+html {
+  font-family: fonts.$sans;
+
+  body {
+    background: colors.$background;
+    color: colors.$text-primary;
+  }
+
+  * {
+    line-height: 1em;
+  }
+}
